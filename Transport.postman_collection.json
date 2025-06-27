@@ -1,0 +1,901 @@
+{
+	"info": {
+		"_postman_id": "5560f92d-986a-4389-92b4-92717fbbd0ae",
+		"name": "Transport",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40951466",
+		"_collection_link": "https://karimov-4444.postman.co/workspace/Dars~6a77c507-4e2d-46e2-b831-0adcf64be435/collection/40951466-5560f92d-986a-4389-92b4-92717fbbd0ae?action=share&source=collection_link&creator=40951466"
+	},
+	"item": [
+		{
+			"name": "Admin",
+			"item": [
+				{
+					"name": "Admins",
+					"item": [
+						{
+							"name": "Get all Admins",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/admin/",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"admin",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get ADMINS by ID",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NWE5YThjMTgyMGUzN2ZiMjM2NTk1ZiIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc1MDc2OTY1OSwiZXhwIjoxNzUwNzc2ODU5fQ.R0ihmcdvy4ODn3dM3sL6gfwwyHay0r9e9z5rLlsmWIY",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/admin/685a9a8c1820e37fb236595f",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"admin",
+										"685a9a8c1820e37fb236595f"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Sign Up Admins",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"username\":\"olimjon\",\n    \"password\":\"Karimoff2007@\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/admin",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"admin"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Sign in",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"username\":\"olimjon\",\n    \"password\":\"Karimoff2007@\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/admin/signin",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"admin",
+										"signin"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update admin",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"username\":\"olimjon\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/admin/",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"admin",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete admin",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/admin/685a9a1e97984b72f6a3aade",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"admin",
+										"685a9a1e97984b72f6a3aade"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "LogOut",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NWE5YThjMTgyMGUzN2ZiMjM2NTk1ZiIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc1MDc2OTY1OSwiZXhwIjoxNzUwNzc2ODU5fQ.R0ihmcdvy4ODn3dM3sL6gfwwyHay0r9e9z5rLlsmWIY",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/admin/logout",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"admin",
+										"logout"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Token",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/admin/token",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"admin",
+										"token"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Ticket",
+					"item": [
+						{
+							"name": "Post Ticket",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"transport_id\": \"68504f24d6fc0d808cb3daaa\",\n    \"from\": \"Tashkent\",\n    \"to\": \"Samarkand\",\n    \"price\": 95000,\n    \"departure\": \"2025-06-20T08:00:00.000Z\",\n    \"arrival\": \"2025-06-20T12:00:00.000Z\",\n    \"customer_id\": 123\n}\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/ticket/",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"ticket",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get all Tickets",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "localhost:3000/ticket",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"ticket"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get one ticket",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "localhost:3000/ticket/685051c5d4a41e518a48a1e4",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"ticket",
+										"685051c5d4a41e518a48a1e4"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update ticket",
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"to\":\"Andijon\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/ticket/685051c5d4a41e518a48a1e4",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"ticket",
+										"685051c5d4a41e518a48a1e4"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Ticket",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/ticket/68504f24d6fc0d808cb3daaa",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"ticket",
+										"68504f24d6fc0d808cb3daaa"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Transport",
+					"item": [
+						{
+							"name": "Get All Transports",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/transport",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"transport"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get one transport",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Post Transport",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"transport_type\":\"Cobalt\",\n    \"class\":\"car\",\n    \"seat\":1\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/transport/",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"transport",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Patch Transport",
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"transport_type\":\"Malibu\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/transport/68504deac3add76823d5bae5",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"transport",
+										"68504deac3add76823d5bae5"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Transport",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/transport/68504deac3add76823d5bae5",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"transport",
+										"68504deac3add76823d5bae5"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Customer",
+					"item": [
+						{
+							"name": "Sign up",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\":\"amirjonkarimoff@gmail.com\",\n    \"phoneNumber\":\"+998999999999\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/customer/signup",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"customer",
+										"signup"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get All Customers",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NWE5YTZlMTgyMGUzN2ZiMjM2NTk0YyIsInJvbGUiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzUwOTMxOTI2LCJleHAiOjE3NTA5MzkxMjZ9.PUgtILe0I7LNdDZmMsfBeshYTi2R4j0QewPvUZjnXF8",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\":\"amirjonkarimoff@gmail.com\",\n    \"phoneNumber\":\"+998915200523\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/customer",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"customer"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Customer by id",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NWE5YTZlMTgyMGUzN2ZiMjM2NTk0YyIsInJvbGUiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzUwOTMxOTI2LCJleHAiOjE3NTA5MzkxMjZ9.PUgtILe0I7LNdDZmMsfBeshYTi2R4j0QewPvUZjnXF8",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/customer/685a9924c3cb0988b8b8697d",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"customer",
+										"685a9924c3cb0988b8b8697d"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Patch Customer",
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\":\"amirjonkarimovcompany@gmail.com\"\n    \n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/customer/68505c2ff57a3e48e9de8f38",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"customer",
+										"68505c2ff57a3e48e9de8f38"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Customer",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\":\"amirjonkarimovcompany@gmail.com\"\n    \n}"
+								},
+								"url": {
+									"raw": "localhost:3000/customer/68505c2ff57a3e48e9de8f38",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"customer",
+										"68505c2ff57a3e48e9de8f38"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Sign in",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\":\"amirjonkarimovcompany@gmail.com\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/customer/signin",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"customer",
+										"signin"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Confirm Password",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\":\"amirjonkarimovcompany@gmail.com\",\r\n    \"otp\":\"381031\"\r\n}   ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/customer/confirm-signin",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"customer",
+										"confirm-signin"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getAccessToken",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/customer/token",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"customer",
+										"token"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "New Request",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/customer/logout",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"customer",
+										"logout"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Passport",
+					"item": [
+						{
+							"name": "Create Passport info",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NWE5YTZlMTgyMGUzN2ZiMjM2NTk0YyIsInJvbGUiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzUwOTMxOTI2LCJleHAiOjE3NTA5MzkxMjZ9.PUgtILe0I7LNdDZmMsfBeshYTi2R4j0QewPvUZjnXF8",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"serial\":\"AB4455AC\",\n    \"jsshir\":\"12345678912345\",\n    \"fullname\":\"Amirjon Karimov\",\n    \"customer_id\":\"685a9924c3cb0988b8b8697d\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/passport",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"passport"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get all Passport Infos",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NWE5YTZlMTgyMGUzN2ZiMjM2NTk0YyIsInJvbGUiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzUwOTMxOTI2LCJleHAiOjE3NTA5MzkxMjZ9.PUgtILe0I7LNdDZmMsfBeshYTi2R4j0QewPvUZjnXF8",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "localhost:3000/passport",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"passport"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get only One passport info",
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"customer_id\":\"685a9924c3cb0988b8b8697d\",\n    \"serial\":\"A12131123\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/passport/685d1f04c2efbe7d5045a5be",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"passport",
+										"685d1f04c2efbe7d5045a5be"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get One passport",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/passport/685d1f04c2efbe7d5045a5be",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"passport",
+										"685d1f04c2efbe7d5045a5be"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Passport",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NWE5YTZlMTgyMGUzN2ZiMjM2NTk0YyIsInJvbGUiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzUwOTMxOTI2LCJleHAiOjE3NTA5MzkxMjZ9.PUgtILe0I7LNdDZmMsfBeshYTi2R4j0QewPvUZjnXF8",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/passport/685d1f04c2efbe7d5045a5be",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"passport",
+										"685d1f04c2efbe7d5045a5be"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
